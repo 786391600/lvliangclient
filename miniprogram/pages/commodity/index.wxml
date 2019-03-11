@@ -1,0 +1,40 @@
+<!-- <nav title='{{commodity_body}}'></nav> -->
+<view class='img_box'>
+  <image src='{{commodity_img}}' bindload='imageOnload' mode="widthFix"></image>
+</view>
+<view class='adress'>
+  <view class='adress_box'>
+    <view class='add_adress' bindtap='chooseAddress' wx-if='{{addressShow}}'>
+    <view><i class='iconfont jiahao'></i></view>
+    <view>添加地址</view>
+    </view>
+    <view class='adress_box_tit'>{{adress_tit}}</view> 
+    <view class='adress_box_con'>{{adress_con}}</view>
+    <view class='adress_update' bindtap='chooseAddress'>修改收货地址</view>
+  </view>
+</view>
+<button class='shop_btn' hover-class='shop_btn_hover' bindtap='commodityPay' loading='{{loading}}'>
+   点击抢购
+</button>
+<view class='com_list_btn' bindtap='moreCommodity'>
+   <i class='iconfont shangping'></i>
+   <view class='com_list_bottom'>
+     更多优惠
+   </view>
+</view>
+<view class='com_order' bindtap='toOrder'>
+   我的订单
+</view>
+<button open-type="contact" class='customer' session-from='{{commodity_body}}'><i class='iconfont kefu'></i></button>
+<view class='userAuth' style='height:{{windowHeight + navHeight}}px;' wx:if='{{userAuth}}'>
+  <view class='userAuth-tip'>
+     <view>选取地址需要</view>
+     <view>通讯地址授权</view>
+    <button
+    open-type="openSetting"
+    bindopensetting='handleSetting'
+  >
+      点击授权
+    </button>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+<nav title='精选商品' isBack='{{false}}'></nav>
+<view class='list-box' style='padding-top:{{navHeight + 20}}px'>
+<view class='banner-time'>
+   <view class='banner-time-title'>吕梁优惠购</view>
+  </view>
+  <view class='Underline'></view>
+  <!-- <view class='list-item' wx:for='{{listData}}' bindtap='commodityDetails' data-details='{{item}}'>
+    <view class='list-item-left'>
+      <image src='{{item.imgUrl}}'></image>
+    </view>
+    <view class='list-item-right'>
+      <view>
+        {{item.name}}
+      </view>
+      <view class='item-price'>
+        ¥ {{item.price}}
+      </view>
+      <view class='item-btn'>
+        <view>
+           <button class='buy-button' >立即抢购</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view> -->
+  <view id='commodity'>
+    <view class='commodity-Recommend'>
+      <view class='Recommend-image' style='background-image:url({{listData[0].imgUrl}})'>
+        <!-- <image src='{{listData[0].imgUrl}}'></image> -->
+      </view>
+      <view class='Recommend-Price'>￥{{listData[0].price}} 包邮</view>
+      <view class='Recommend-title'>{{listData[0].name}}</view>
+      <view class='Recommend-button' bindtap='getCommodityInfo' data-details='{{listData[0]}}'>抢购</view>
+    </view>
+    <view class='Singlecommodity'>
+      <view class='Singlecommodity-con' wx:for='{{listData}}' wx-if='{{index > 0}}' data-details='{{item}}'>
+        <view class='Singlecommodity-image'>
+          <image src='{{item.imgUrl}}'></image>
+        </view>
+        <view class='Singlecommodity-title'>{{item.name}}</view>
+        <view class='Singlecommodity-Price'>￥{{item.price}} 包邮</view>
+        <view class='Singlecommodity-button' bindtap='getCommodityInfo' data-details='{{item}}'>抢购</view>
+      </view>
+    </view>
+  </view>
+</view>

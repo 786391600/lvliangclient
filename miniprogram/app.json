@@ -1,0 +1,51 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/show/index",
+    "pages/home/index",
+    "pages/getShareImg/index",
+    "pages/activity/index",
+    "pages/QRcode/index",
+    "pages/commodityList/index",
+    "pages/commodity/index",
+      "pages/order/index",
+     "pages/paySuccess/index",
+     "pages/personalCenter/index",
+     "pages/exchangeCard/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "吕梁惠乐购",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "selectedColor": "#D5554C",
+    "color": "#666",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "首页",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home1.png"
+
+      },
+      {
+        "pagePath": "pages/commodityList/index",
+        "text": "优惠购",
+        "iconPath": "images/icon/shangpin1.png",
+        "selectedIconPath": "images/icon/shangpin.png"
+      },
+      {
+        "pagePath": "pages/personalCenter/index",
+        "text": "我的",
+        "iconPath": "images/icon/my.png",
+        "selectedIconPath": "images/icon/my1.png"
+      }
+    ]
+  }
+}

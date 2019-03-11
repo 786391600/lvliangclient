@@ -1,0 +1,16 @@
+<import src="../../until/wxParse/wxParse.wxml"/>
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+<view class='footer'>
+   <view class='footer-left'>
+      <view></view>
+      <view></view>
+   </view>
+   <view class='footer-right'>
+      <view>
+        立即参加
+      </view>
+   </view>
+</view>
+

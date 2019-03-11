@@ -1,0 +1,66 @@
+@import '../../../style/iconfont.wxss';
+.nav{
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.bg-white{
+  background:white;
+}
+.nav-title{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  font-family:PingFang-SC-Medium;
+  font-size:36rpx;
+  letter-spacing:2px;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+}
+.isBack{
+  padding-left: 80rpx;
+}
+.nav-title text{
+  background-image: linear-gradient( 135deg, #FD6E6A 10%, #FFC600 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav .back{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 15px;
+}
+.bg-white{
+  /* background-color: #ffffff; */
+}
+.bg-gray{
+  background-color: #f7f7f7;
+}
+.overflow{
+  overflow: auto;
+}
+.hidden{
+  overflow: hidden;
+}
+.nav-back{
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0rpx 30rpx 0rpx;
+  font-size: 40rpx;
+}
+.nav-back-hover{
+  background:rgba(158, 149, 149, 0.575);
+}

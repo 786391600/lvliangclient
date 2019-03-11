@@ -1,0 +1,50 @@
+/* pages/Testpage/OrderNumber/OrderNumber.wxss */
+@import '../../style/iconfont.wxss';
+.wxParse{
+  padding-bottom: 118rpx;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  height: 118rpx;
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  background: white;
+}
+.footer>view{
+  height: 100%;
+}
+.footer-left{
+  width: 46%;
+}
+.footer-right{
+  width: 54%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-right>view{
+  width: 90%;
+  height: 90rpx;
+  border-radius: 45rpx;
+  text-align: center;
+  line-height: 90rpx;
+  color: white;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+/* .footer-right>view{
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  color: white;
+} */
+/* .footer-right>view:nth-of-type(1){
+  background: #FD7E89;
+}
+.footer-right>view:nth-of-type(2){
+  background: #FD3246;
+} */
