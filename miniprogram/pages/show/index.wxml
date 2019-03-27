@@ -8,7 +8,8 @@
       <view></view>
    </view>
    <view class='footer-right'>
-      <view>
+      <!-- <view>jkjlklk</view> -->
+      <view bindtap='buttonClick'>
         立即参加
       </view>
    </view>

@@ -1,8 +1,8 @@
 {
   "cloud": true,
   "pages": [
-    "pages/show/index",
     "pages/home/index",
+    "pages/show/index",
     "pages/getShareImg/index",
     "pages/activity/index",
     "pages/QRcode/index",

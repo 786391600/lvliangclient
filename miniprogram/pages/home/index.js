@@ -156,9 +156,15 @@ Page({
   },
   getActivityInfo (e) {
     var data = e.currentTarget.dataset.details;
-    wx.navigateTo({
-      url: '/pages/activity/index?activityId='+data.id
-    })
+    if (data.articleId){
+      wx.navigateTo({
+        url: '/pages/show/index?articleId=' + data.articleId + '&activityId=' + data.id +'&type=activity'
+      })
+    } else {
+      wx.navigateTo({
+        url: '/pages/activity/index?activityId=' + data.id
+      }) 
+    }
   },
   getCommodityInfo (e) {
     var data = e.currentTarget.dataset.details;
