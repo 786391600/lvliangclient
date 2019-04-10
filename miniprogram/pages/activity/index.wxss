@@ -339,6 +339,7 @@
   background: linear-gradient(to right, #ff5d4f, #ff2022);
   color: #fff;
   width: 40%;
+  font-size: 36rpx;
 }
 
 .HomePage {

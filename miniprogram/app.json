@@ -35,12 +35,6 @@
 
       },
       {
-        "pagePath": "pages/commodityList/index",
-        "text": "优惠购",
-        "iconPath": "images/icon/shangpin1.png",
-        "selectedIconPath": "images/icon/shangpin.png"
-      },
-      {
         "pagePath": "pages/personalCenter/index",
         "text": "我的",
         "iconPath": "images/icon/my.png",
@@ -49,3 +43,4 @@
     ]
   }
 }
+

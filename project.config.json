@@ -29,12 +29,20 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "db guide",
-					"pathName": "pages/databaseGuide/databaseGuide"
+					"pathName": "pages/databaseGuide/databaseGuide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "分享进入",
+					"pathName": "pages/show/index",
+					"query": "articleId=f83c22a0-50a4-11e9-a6fd-5b3dea0662cf&activityId=322ef800-3b67-11e9-9303-3b98d1d06cf2",
+					"scene": 1007
 				}
 			]
 		}

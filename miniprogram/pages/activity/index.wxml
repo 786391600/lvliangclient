@@ -152,7 +152,7 @@
   <button bindtap='getShareImg'>活动海报</button>
 </view>
 <view class='HomePage' bindtap='GoHome'><view class='iconH'><i class='iconfont huodong'></i></view><view>福利</view></view>
-<view class='footer'>
+<!-- <view class='footer'>
    <view class='footer-left'>
       <view></view>
       <view></view>
@@ -167,5 +167,5 @@
          <text>发起拼团</text>
       </view>
    </view>
-</view>
+</view> -->
 

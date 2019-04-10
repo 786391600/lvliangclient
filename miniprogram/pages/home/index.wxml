@@ -5,7 +5,7 @@
   <view class="hewder-name {{active==1?'active':''}}" data-active='1' bindtap='changestate'>活动</view>
   <view class="hewder-name {{active==2?'active':''}}" data-active='2' bindtap='changestate'>商品</view>
 </view> -->
-<view class='context' style='margin-top:{{navHeight+10}}px'>
+<view class='context' style='margin-top:{{navHeight+10}}px' wx:if = "activityList.length > 0">
   <view class='banner-time'>
    <view>{{newDate}}</view>
    <view class='banner-time-title'> 全城活动</view>
@@ -17,7 +17,7 @@
       <view>{{activityList[0].title}}</view>
       <view class='date'>截至日期：{{activityList[0].date}}</view>
     </view>
-    <view class='banner-image' bindtap='getActivityInfo' data-details = '{{activityList[0]}}' style='background-image:url({{activityList[0].imgUrl}});'>
+    <view class='banner-image' bindtap='getActivityInfo' data-details = '{{activityList[0]}}' style='background-image:url({{activityList[0].shareImgUrl ? activityList[0].shareImgUrl : activityList[0].imgUrl}});'>
       <!-- <image src='{{activityList[0].imgUrl}}'></image> -->
     </view>
     <view class='tip'>
@@ -25,7 +25,7 @@
     </view>
   </view>
   <view class='activity' wx:for='{{activityList}}' bindtap='getActivityInfo' data-details='{{item}}' wx-if='{{index > 0}}'>
-    <view class='activity-image' style='background-image:url({{item.imgUrl}});'></view>
+    <view class='activity-image' style='background-image:url({{item.shareImgUrl ? item.shareImgUrl : item.imgUrl}});'></view>
     <view class='activity-title'>
       <view>{{item.title}}</view>
       <view class='date'>截至日期：{{item.date}}</view>

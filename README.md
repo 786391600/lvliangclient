@@ -10,3 +10,10 @@
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
 
+
+/*{
+ * "pagePath": "pages/commodityList/index",
+  *"text": "优惠购",
+  *"iconPath": "images/icon/shangpin1.png",
+  *"selectedIconPath": "images/icon/shangpin.png"
+},*/

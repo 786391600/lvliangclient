@@ -4,14 +4,18 @@
 </view>
 <view class='footer'>
    <view class='footer-left'>
-      <view></view>
-      <view></view>
+      <button bindtap='showShareBox'>分享</button>
    </view>
    <view class='footer-right'>
-      <!-- <view>jkjlklk</view> -->
       <view bindtap='buttonClick'>
         立即参加
       </view>
    </view>
+</view>
+<view class='shareBox' wx:if='{{showShareBox}}' bindtap = 'shareBoxHide'>
+  <view class='shareBtn'>
+    <button open-type="share">分享给好友</button>
+    <button bindtap='getShareImg'>活动海报</button>
+  </view>
 </view>
 
